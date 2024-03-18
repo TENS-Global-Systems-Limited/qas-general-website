@@ -17,7 +17,7 @@ const Navbar = () => {
       justifyContent: "space-between",
       alignItems: "center",
       mt: "1.5rem",
-      px: "2rem",
+      px:"4rem"
     },
     button:{
       bgcolor:PRIMARY_COLOR,

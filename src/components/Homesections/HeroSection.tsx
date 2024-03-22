@@ -7,8 +7,8 @@ import elipsered from "@/assets/Ellipsered.svg";
 import googleplay from "@/assets/googlePlay.png"
 import appstore from "@/assets/appstore.png"
 import Redlinetext from "../ResusableComp/Redlinetext";
-import { Height, Padding } from "@mui/icons-material";
 import Link from "next/link";
+
 
 const HeroSection = () => {
   const styles = {

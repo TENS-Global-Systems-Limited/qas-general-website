@@ -5,3 +5,23 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+.carouselItem {
+  border-radius: 30px;
+  /* min-width: 17.87rem; */
+}
+.carouselItem > div {
+  pointer-events: none;
+  
+}
+.carousel {
+  margin-top: 10px;
+  width: 100%;
+  cursor: grab;
+  overflow: hidden;
+ 
+}
+.innerCarousel {
+  /* background-color: aqua; */
+}

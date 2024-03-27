@@ -8,6 +8,7 @@ import Image from 'next/image';
 import radialdisplay from "@/assets/displayradial.svg"
 import iphonedisplay from "@/assets/iPhone 15 Pro Portrait Mockup.png"
 import iphonedisplay2 from "@/assets/iPhone 15 Pro Portrait Mockup2.png"
+import { Height } from '@mui/icons-material';
 
 const Mobilemockup = () => {
   const styles = {
@@ -17,6 +18,7 @@ const Mobilemockup = () => {
       display: "flex",
       justifycontent: "center",
       gap: "2rem",
+      height:"44rem"
     },
     appbutton: {
       width: "15rem",
@@ -57,9 +59,9 @@ const Mobilemockup = () => {
             width: "18rem",
             height: "auto",
             position: "absolute",
-            top:30,
-            left:100
-
+            top: 30,
+            left: 100,
+            zIndex: 3,
           }}
         />
         <Image
@@ -69,13 +71,20 @@ const Mobilemockup = () => {
             width: "18rem",
             height: "auto",
             position: "absolute",
-            right: "10",
+            right: 100,
+            zIndex: 2,
           }}
         />
         <Image
           src={radialdisplay}
           alt=""
-          style={{ width: "45rem", height: "auto" }}
+          style={{
+            width: "45rem",
+            height: "auto",
+            position: "absolute",
+            top: 550,
+            zIndex: 0,
+          }}
         />
       </Box>
     </Box>

@@ -13,11 +13,12 @@ import HowItWorks from "@/components/Homesections/how-it-works";
 import AccordionWrapper from "@/components/ResusableComp/AccordionWrapper";
 import { Typography } from "@mui/material";
 import Mobilemockup from "@/components/Homesections/Mobilemockup";
+import Faq from "@/components/Homesections/Faq";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
+      
       <HeroSection />
       <OurServices />
       <WhoWeAre isMobile={false} />
@@ -25,6 +26,7 @@ export default function Home() {
       <Certifiedartisans />
       <HowItWorks />
       <Mobilemockup />
+      <Faq />
     </main>
   );
 }

@@ -25,7 +25,7 @@ const Navlinks = ({title,path}:{title:string,path:string}) => {
     },
   };
   return (
-    <Link href={path} style={isPath ? styles.linkActive : styles.link}>
+    <Link href={`/${path}`} style={isPath ? styles.linkActive : styles.link}>
       <Typography variant="h6" fontWeight={500}>
         {title}
       </Typography>

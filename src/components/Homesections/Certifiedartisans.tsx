@@ -13,7 +13,7 @@ const Certifiedartisans = () => {
       height: "auto",
     },
     differentScreenpx: {
-      px: { xs: "1rem", sm: "1.5rem", md: "2.5rem", lg: "4rem", xl: "4rem" },
+      px: { xs: "1rem", sm: "1.5rem", md: "2.5rem", lg: "3rem", xl: "4rem" },
       mt: "4rem",
       display: "flex",
       flexDirection: "column",

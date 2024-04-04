@@ -24,7 +24,7 @@ const Footer = () => {
       width: "100%",
       display: "flex",
       justifyContent: "space-between",
-      mt: "1.5rem",
+      mt: "7rem",
       px: "4rem",
     },
   };
@@ -63,7 +63,7 @@ const Footer = () => {
           sx={{ display: "flex", alignItems: "center" }}
         >
           <Image src={phone} alt="" />
-          Qick@gmail.com
+          (+123) 9456 1234
         </Typography>
       </Box>
       <Box>
@@ -71,22 +71,41 @@ const Footer = () => {
           Legal
         </Typography>
         <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Link href={""}>
-            <Typography variant="body2">Privacy Policy</Typography>
+          <Link href={""} style={{ textDecoration: "none" }}>
+            <Typography
+              variant="body2"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Privacy Policy
+            </Typography>
           </Link>
-          <Link href={""}>
+          <Link href={""} style={{ textDecoration: "none" }}>
             {" "}
-            <Typography variant="body2">Terms and Conditions</Typography>
+            <Typography
+              variant="body2"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              Terms and Conditions
+            </Typography>
           </Link>
-          <Link href={""}>
+          <Link href={""} style={{ textDecoration: "none" }}>
             {" "}
-            <Typography variant="body2">
+            <Typography
+              variant="body2"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
               Security and Compliance
             </Typography>{" "}
           </Link>
-          <Link href={""}>
+          <Link href={""} style={{ textDecoration: "none" }}>
             {" "}
-            <Typography variant="body2"> Community Rules</Typography>
+            <Typography
+              variant="body2"
+              sx={{ textDecoration: "none", color: "black" }}
+            >
+              {" "}
+              Community Rules
+            </Typography>
           </Link>
         </Box>
       </Box>

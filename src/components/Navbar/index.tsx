@@ -1,12 +1,13 @@
-
+"use client";
 import React from 'react'
-import { Box, Button, Typography, useTheme } from '@mui/material'
+import { Box, Button, Typography, useMediaQuery, useTheme } from '@mui/material'
 import Image from 'next/image';
 import logo from '@/assets/logo.png'
 import Link from 'next/link';
 import Navlinks from '../Navlink/Navlinks';
 import { PRIMARY_COLOR } from '@/utilities/constants';
 const Navbar = () => {
+  const isMobile = useMediaQuery("(min-width: 900px)");
   const styles = {
     link: {
       textDecoration: "none",
@@ -17,7 +18,7 @@ const Navbar = () => {
       justifyContent: "space-between",
       alignItems: "center",
       mt: "1.5rem",
-      px:"4rem"
+      px:{xs:"0rem",sm:"2rem",md:"4rem"}
     },
     button:{
       bgcolor:PRIMARY_COLOR,
@@ -26,16 +27,21 @@ const Navbar = () => {
     }
   };
   return (
-    <Box
-      sx={styles.mainContainer}
-    ><Image src={logo} alt='logo' style={{width:"14.3rem",height:"5rem"}}/>
-    <Box sx={{display:"flex",gap:"3rem"}}>
-     <Navlinks title='Home' path="" />
-     <Navlinks title='Services' path="services" />
-     <Navlinks title='About Us' path="about" />
-     <Navlinks title='FAQ' path="faq" />
-      
-    </Box>
+    <Box sx={styles.mainContainer}>
+      <Image
+        src={logo}
+        alt="logo"
+        style={{ width: isMobile ?"14.3rem" :"10rem", height: "auto" }}
+      />
+      {isMobile && (
+        <Box sx={{ display: "flex", gap: "3rem" }}>
+          <Navlinks title="Home" path="" />
+          <Navlinks title="Services" path="services" />
+          <Navlinks title="About Us" path="about" />
+          <Navlinks title="FAQ" path="faq" />
+        </Box>
+      )}
+
       <Button sx={styles.button}>Download app</Button>
     </Box>
   );

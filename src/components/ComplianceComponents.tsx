@@ -191,13 +191,13 @@ const ComplianceComponents = () => {
             affected parties promptly.
           </Typography>
         </Typography>
-        <Typography  variant={isMobile ? "body2" : "body1"}>
-          Remember, this is a general guideline. It's crucial to tailor security
-          measures to the specific needs and scale of your handyman website, and
-          regularly update them to adapt to evolving security threats and
-          compliance standards. Consulting with cybersecurity and legal
-          professionals can also ensure comprehensive security and compliance
-          measures.
+        <Typography variant={isMobile ? "body2" : "body1"}>
+          Remember, this is a general guideline. It`&apos;`s crucial to tailor
+          security measures to the specific needs and scale of your handyman
+          website, and regularly update them to adapt to evolving security
+          threats and compliance standards. Consulting with cybersecurity and
+          legal professionals can also ensure comprehensive security and
+          compliance measures.
         </Typography>
       </Box>
     </Box>

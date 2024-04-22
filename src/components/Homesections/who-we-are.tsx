@@ -2,11 +2,9 @@ import { Box, Typography, useMediaQuery } from '@mui/material'
 import Image from 'next/image'
 import React from 'react'
 import capentarcutting from "@/assets/carpenter-cutting.png"
-interface WhoWeAreProps {
-  isMobile: boolean;
-}
 
-const WhoWeAre = ({isMobile}:WhoWeAreProps) => {
+
+const WhoWeAre = () => {
   ;
   return (
     <Box sx={{ display: "flex" }}>
@@ -42,14 +40,5 @@ const WhoWeAre = ({isMobile}:WhoWeAreProps) => {
   );
 }
 
-export async function getStaticProps() {
-  const isMobile = useMediaQuery("(min-width: 600px)"); 
-
-  return {
-    props: {
-      isMobile, 
-    },
-  };
-}
 
 export default WhoWeAre

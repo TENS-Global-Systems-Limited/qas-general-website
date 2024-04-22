@@ -21,8 +21,8 @@ export default function Home() {
       
       <HeroSection />
       <OurServices />
-      <WhoWeAre isMobile={false} />
-      <Mission isMobile={false} />
+      <WhoWeAre  />
+      <Mission />
       <Certifiedartisans />
       <HowItWorks />
       <Mobilemockup />

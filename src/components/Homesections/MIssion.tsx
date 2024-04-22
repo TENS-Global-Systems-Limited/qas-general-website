@@ -5,7 +5,8 @@ import React from 'react'
 import {motion} from "framer-motion"
 import Cards from '../ResusableComp/Cards';
 import { Carousel } from '../ResusableComp/carousel';
-const Mission = ({isMobile}:{isMobile:boolean}) => {
+const Mission = () => {
+  const isMobile = useMediaQuery("(min-width: 600px)");
     const styles ={
       differentScreenpx :{
         px:{xs:"1rem",sm:"1.5rem",md:"2.5rem",lg:"3rem",xl:"4rem"},
@@ -33,15 +34,7 @@ const Mission = ({isMobile}:{isMobile:boolean}) => {
     </Box>
   );
 }
-export async function getStaticProps() {
-  const isMobile = useMediaQuery("(min-width: 600px)");
 
-  return {
-    props: {
-      isMobile,
-    },
-  };
-}
 
 
 export default Mission

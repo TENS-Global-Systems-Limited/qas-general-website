@@ -10,6 +10,7 @@ import { Message } from "@mui/icons-material";
 import phone from "@/assets/phone.svg"
 import Link from "next/link";
 import { PRIMARY_COLOR } from "@/utilities/constants";
+import { LINKS } from "@/utilities/links";
 const Footer = () => {
   const styles = {
     socialLogos: {
@@ -71,7 +72,7 @@ const Footer = () => {
           Legal
         </Typography>
         <Box sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <Link href={""} style={{ textDecoration: "none" }}>
+          <Link href={`${LINKS.policy}`} style={{ textDecoration: "none" }}>
             <Typography
               variant="body2"
               sx={{ textDecoration: "none", color: "black" }}
@@ -79,7 +80,7 @@ const Footer = () => {
               Privacy Policy
             </Typography>
           </Link>
-          <Link href={""} style={{ textDecoration: "none" }}>
+          <Link href={`${LINKS.terms}`} style={{ textDecoration: "none" }}>
             {" "}
             <Typography
               variant="body2"
@@ -88,7 +89,7 @@ const Footer = () => {
               Terms and Conditions
             </Typography>
           </Link>
-          <Link href={""} style={{ textDecoration: "none" }}>
+          <Link href={`${LINKS.compliance}`} style={{ textDecoration: "none" }}>
             {" "}
             <Typography
               variant="body2"
@@ -97,7 +98,7 @@ const Footer = () => {
               Security and Compliance
             </Typography>{" "}
           </Link>
-          <Link href={""} style={{ textDecoration: "none" }}>
+          <Link href={`${LINKS.rules}`} style={{ textDecoration: "none" }}>
             {" "}
             <Typography
               variant="body2"
